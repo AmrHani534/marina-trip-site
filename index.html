@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Trip Landing Page</title>
+    <!-- Google Fonts for Arabic and Latin scripts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 id="title">🌊 برنامج السفارية – مارينا (5 أيام / 4 ليالي)</h1>
+            <p id="subtitle">
+                الرحلة في مارينا – الساحل الشمالي لمدة 5 أيام / 4 ليالي.
+                الإجمالي: <strong>18,145 جنيه</strong> (شامل البنزين + رسوم سويفيل).
+                عدد الأفراد: <strong>7</strong>.
+                نصيب الفرد: <strong>≈ 2,592 جنيه</strong> (من غير الفطار أو رفاهيات إضافية).
+            </p>
+            <button id="toggle-lang" class="lang-btn">English</button>
+        </div>
+    </header>
+    <main class="container">
+        <!-- Responsible organisers -->
+        <section class="section">
+            <h2 id="organisers-title">المسؤولون عن الرحلة والإدارة</h2>
+            <ul id="organisers-list">
+                <li>عمرو هاني</li>
+                <li>عمرو الدويق</li>
+                <li>محمد خالد</li>
+            </ul>
+        </section>
+        <!-- Cost breakdown table -->
+        <section class="section">
+            <h2 id="cost-title">تفاصيل التكلفة</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="col-item">البند</th>
+                            <th id="col-cost">المبلغ (جنيه)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cost-table-body">
+                        <tr><td>إيجار الشاليه (5 أيام/4 ليالي)</td><td>6,000</td></tr>
+                        <tr><td>الغداء + الأكل</td><td>7,000</td></tr>
+                        <tr><td>البنزين + رسوم سويفيل</td><td>3,075</td></tr>
+                        <tr><td>البحر</td><td>700</td></tr>
+                        <tr><td>مياه</td><td>200</td></tr>
+                        <tr><td>مراسي (QR2)</td><td>400</td></tr>
+                        <tr><td>تسالي</td><td>520</td></tr>
+                        <tr><td>نت</td><td>230</td></tr>
+                        <tr><td>كاوتش</td><td>20</td></tr>
+                        <tr class="total-row"><td><strong>الإجمالي الكلي</strong></td><td><strong>18,145</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p id="per-person">نصيب الفرد = الإجمالي ÷ 7 ≈ 2,592 جنيه للفرد</p>
+        </section>
+        <!-- Suggested activities -->
+        <section class="section">
+            <h2 id="activities-title">اقتراحات لنشاطات / مطاعم</h2>
+            <ul id="activities-list">
+                <li>مطعم مرحبتين ومرحبا – <a href="https://drive.google.com/file/d/1KtwZpDaOyxtM_I2slpj1FmLq_5g3Zy6h/view?usp=sharing" target="_blank">القائمة</a></li>
+                <li>مطعم عم شلتت – <a href="https://www.menuegypt.com/ar/%D8%B9%D9%85-%D8%B4%D9%84%D8%AA%D8%AA" target="_blank">المنيو والمعلومات</a></li>
+                <li>مطعم بريموز – <a href="https://drive.google.com/file/d/1OhGnQPqvXnchivIMnV0LB5cTo8YIApx1/view?usp=sharing" target="_blank">القائمة</a></li>
+            </ul>
+        </section>
+        <!-- Call to action form -->
+        <section class="section call-to-action">
+            <h2 id="cta-title">هل ترغب في المشاركة؟</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label id="attend-label" for="attend">هل أنت موافق على حضور السفارية ودفع نصيب الفرد؟</label>
+                    <select id="attend" name="attend">
+                        <option value="yes">نعم</option>
+                        <option value="no">لا</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="comments-label" for="comments">هل ترغب في اقتراح نشاط إضافي أو لديك أي ملاحظات؟</label>
+                    <textarea id="comments" name="comments" rows="3" placeholder="اكتب هنا..."></textarea>
+                </div>
+                <button type="submit" id="submit-btn">إرسال</button>
+            </form>
+            <p id="thank-you" class="hidden">شكراً لمشاركتك! سيتم التواصل معك قريباً.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
